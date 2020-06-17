@@ -67,7 +67,7 @@ Jttp may be extended or enhanced by using scripts that execute before and after 
   <dt><code>-O,--offline</code>
   <dd>Build the request and print it, but don't actually send it.
   <dt><code>-o,--output filename</code>
-  <dd>Save output to <code>filename</code> instead of stdout. If <code>-d</code> is also set, then only the response body is saved to <code>filename</code>ß.
+  <dd>Save output to <code>filename</code> instead of stdout. If <code>-d</code> is also set, then only the response body is saved to <code>filename</code>.
   <dt><code>-P,--pretty-print NONE|COLOR|INDENT|ALL</code>
   <dd>Controls output processing. The value can be <code>NONE</code> to not prettify the output, <code>ALL</code> to apply both colors and indenting (default when printing to <code>System.out</code>), <code>COLOR</code>, or <code>INDENT</code>.
   <dt><code>--post-process-script script_name</code>
@@ -307,7 +307,7 @@ Jttp binds an object to the scripting engine called `jttpScriptObject` that give
 * The temporary response file (through the `getResponseFile` method), but only in scripts run after the HTTP request is run. It's best practice to use the temporary file to read and process but not modify.
 * A logger (through the `log` method) that will write log messages to the logger used by Jttp at `INFO` level.
 
-### @-files
+### @-files and Shell Aliases
 
 Both the `java` launcher and Jttp recognize at-files (@-files). These are files that you can make that contains either a jvm or program argument (1 per line). Combining with shell aliases, this makes jttp incredibly easy to use. For example, if you have to make repeated requests to a server and you need to take advantage of many of the system properties on the jvm, make a file called `/home/user/jttp-args` and give it the following:
 
@@ -316,7 +316,8 @@ Both the `java` launcher and Jttp recognize at-files (@-files). These are files 
 -Djava.security.auth.login.config=/secure/my-jaas.conf
 -Djava.security.krb5.conf=/secure/krb5.conf
 -Djavax.security.auth.useSubjectCredsOnly=false
--jar=/path/to/jttp
+-jar
+/path/to/jttp
 ```
 
 Now run `jttp`:
