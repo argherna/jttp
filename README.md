@@ -344,7 +344,7 @@ java @/home/user/jttp-args @/home/user/jttp-pgm-args < /home/user/httpbin-post.j
 Finally, you could define a shell alias to make this go even faster. For example, this works in `bash` and `zsh`:
 
 ```bash
-alias jttp=java @/home/user/jttp-args
+alias jttp="java @/home/user/jttp-args"
 ```
 
 Now you can simply run jttp as follows:
