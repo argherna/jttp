@@ -10,6 +10,7 @@
         <junit-jupiter-engine.version>5.6.2</junit-jupiter-engine.version>
         <maven.compiler.source>13</maven.compiler.source>
         <maven.compiler.target>13</maven.compiler.target>
+        <maven-release-plugin.version>3.0.0-M2</maven-release-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
         <picocli.version>4.3.2</picocli.version>
@@ -73,6 +74,16 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${maven-failsafe-plugin.version}</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven-release-plugin.version}</version>
+            </plugin>
         </plugins>
     </build>
+    <scm>
+        <url>scm:git:git@github.com:argherna/jttp.git</url>
+        <connection>scm:git:git@github.com:argherna/jttp.git</connection>
+        <developerConnection>scm:git:git@github.com:argherna/jttp.git</developerConnection>
+    </scm>
 </project>
