@@ -21,7 +21,7 @@ java [jvm args] -jar /path/to/jttp.jar [-dhNORvV] [-A user[:password]] [-M mimet
 
 ## DESCRIPTION
 
-Command line HTTP(S) client, similar to [httpie](https://httpie.org/). Offers numerous input and output methods and many authentication options. You should be using Java 13 or newer to execute Jttp directly from the source file. Input for forms or json can be set as arguments from the command line or as redirected input files. Simple json is generated from command line arguments. For more complex formats, use input redirection.
+Command line HTTP(S) client, similar to [httpie](https://httpie.org/). Offers numerous input and output methods and many authentication options. Input for forms or json can be set as arguments from the command line or as redirected input files. Simple json is generated from command line arguments. For more complex formats, use input redirection.
 
 Jttp may be extended or enhanced by using scripts that execute before and after the request is made. These scripts may be written in  Groovy. 
 
