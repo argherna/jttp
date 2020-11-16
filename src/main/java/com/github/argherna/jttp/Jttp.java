@@ -787,8 +787,10 @@ public class Jttp implements Runnable {
         return !download && (prettyPrint == PrettyPrint.ALL || prettyPrint == PrettyPrint.INDENT);
     }
 
+    @Deprecated(forRemoval = true, since = "1.1")
     private void executeScript(String scriptname, JttpScriptObject jttpScriptObject,
             String[] scriptargs) {
+        LOGGER.log(WARNING, "logger.warning.script.deprecated");
         var scriptEngineName = scriptEngineNameFrom(scriptname);
         var manager = new ScriptEngineManager();
         var engine = manager.getEngineByName(scriptEngineName);
