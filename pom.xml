@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.argherna.jttp</groupId>
     <artifactId>jttp</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <properties>
         <groovy-all.version>3.0.2</groovy-all.version>
         <junit-jupiter-api.version>5.6.2</junit-jupiter-api.version>
@@ -86,6 +85,6 @@
         <url>scm:git:git@github.com:argherna/jttp.git</url>
         <connection>scm:git:git@github.com:argherna/jttp.git</connection>
         <developerConnection>scm:git:git@github.com:argherna/jttp.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>1.1</tag>
     </scm>
 </project>
