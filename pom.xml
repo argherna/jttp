@@ -4,7 +4,7 @@
     <artifactId>jttp</artifactId>
     <version>1.2-SNAPSHOT</version>
     <properties>
-        <groovy-all.version>3.0.2</groovy-all.version>
+        <groovy-all.version>3.0.7</groovy-all.version>
         <junit-jupiter-api.version>5.6.2</junit-jupiter-api.version>
         <junit-jupiter-engine.version>5.6.2</junit-jupiter-engine.version>
         <maven.compiler.source>13</maven.compiler.source>
